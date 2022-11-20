@@ -38,16 +38,17 @@ int main()
   
 	// Read content(s) from the first file
 	content = fgetc(file1);
-	// Check if con
+	// Check if content is empty
 	while (content != EOF)
 	{
+	    // Writing content(s)
 	    fputc(content, file2);
 	    content = fgetc(file1);
         }
   	printf("\nContent(s) have been successfully copied to %s", fileName, "\n");
-	// Close first file
+	// Close the first file
         fclose(file1);
-	// Close seconf file
+	// Close the second file
 	fclose(file2);
 	return 0;
 
