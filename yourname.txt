@@ -1,0 +1,1 @@
+This is the main file and these are some text that will copied to another file
